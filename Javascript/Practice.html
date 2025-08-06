@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <script>
+ var s = 10;
+    var a = 2;
+    console.log(s);
+    console.log(10 + a);
+    console.log(s + 3);
+    
+    try {
+       let x = 10;
+        let y = 2;
+        if (y === 0) {
+            throw new Error("Cannot divide by zero");
+        }
+        let result = x / y;
+        console.log(result);
+
+    } 
+    catch (e) {
+        console.log("Caught Error:", e.message);
+    } 
+    finally {
+        console.log("Evaluated");
+    }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

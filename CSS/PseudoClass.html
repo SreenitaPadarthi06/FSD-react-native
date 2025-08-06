@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>Demos</title>   
+        <style>
+          .parent1{
+            width:100px;
+            height:100px;
+            border:4px solid rgb(234, 255, 2)
+          }
+          .child1{
+            width:100px;
+            height:100px;
+            border:0px solid rgb(255, 251, 0);
+            background-color:rgb(255, 251, 0) ;
+          }
+          .child1:hover{
+            background-color:rgb(50, 232, 0) ;
+          }
+          .parent2 :nth-child(11){
+            width:100px;
+            height:100px;
+            border:4px solid rgb(0, 255, 200)
+          }
+          .child11{
+            width:100px;
+            height:100px;
+            border:0px solid rgb(0, 255, 200);
+            background-color:rgb(0, 255, 200);
+          }
+          .child11:hover{
+            background-color:rgb(50, 232, 0) ;
+          }
+          .child12{
+            width:100px;
+            height:100px;
+            border:0px solid rgb(0, 255, 200);
+            background-color:rgb(0, 255, 200);
+          }
+          .c3:active{
+            background-color:rgba(255, 166, 0, 0.626);
+          }
+          .c4:focus{
+            background-color:rgb(204, 255, 0);
+          }
+          .h1:not(.parent3) {
+            color:azure ;
+          }
+        </style>
+    </head>
+    <body>
+        <div class="parent1">
+            <div class="child1"> <br>Click me</div>
+            <div class="child2"></div>
+        </div>
+        <br>
+        <div class="parent2">
+            <div class="child11"> <br>Click me</div><br>
+            <div class="child12">click me</div><br>
+            <button class="c3">Submit</button><br><br>
+            <button class="c4">Submit</button>
+        </div>
+        <br>
+        <div class="parent3">
+            <h1 class="child31"> <br>Click me</h1><br>
+            <div class="child32">HI</div>
+        </div>
+
+    </body>
+</html>

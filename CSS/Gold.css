@@ -1,0 +1,42 @@
+.card{
+    width:600px;
+    height:160px;
+    border:1px  solid rgb(278, 96%, 38%, 0.867);
+    position:absolute;
+    border-radius:;
+    margin:10px;
+    background-color: hsla(278, 96%, 38%, 0.784);
+
+ }
+.numbers{
+    color:hsla(131, 95%, 43%, 0.668);
+    margin:20px;
+    right:-280px;
+    bottom:-15px;
+    position:relative;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 10px;
+}
+.fanpass{
+    color:hsla(55, 100%, 66%, 0.781);
+    margin:20px;
+    right:-280px;
+    bottom:1px;
+    position:relative;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    font-size: 20px;
+}
+.white{
+     width:110px;
+    height:159px;
+    border:1px  solid rgb(128, 122, 121);
+    position:relative;
+    border-radius:;
+    margin:40px;
+    top:-155px;
+    right:-480px;
+    background-color: rgb(250, 255, 253);
+    background-image: url("./Gold.png");
+     background-size:90%;
+     background-repeat: no-repeat;
+}

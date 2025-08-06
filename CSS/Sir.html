@@ -1,0 +1,46 @@
+Ex code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS calc() Example</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .sidebar {
+      width: 200px;
+      height: 100vh;
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      float: left;
+    }
+
+    .content {
+      height: 100svh;
+      background-color: #f4f4f4;
+      padding: 20px;
+      width: calc(100% - 200px); /* Full width minus sidebar width */
+      float: left;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    Sidebar<br>
+    Width: 200px
+  </div>
+
+  <div class="content">
+    <h1>Content Area</h1>
+    <p>This content area uses <code>width:
+         calc(100% - 200px)</code> to fill the
+          remaining space next to the sidebar.</p>
+  </div>
+
+</body>
+</html>

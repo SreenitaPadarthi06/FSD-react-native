@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart</title>
+     <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        .nav{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: rgb(240, 243, 243);
+        }
+        .logo{
+            cursor:pointer;
+            padding:10px;
+        }
+        .search{
+            padding-top: 10px;
+            padding-left: 5px;
+            padding-right: 20px;
+        }
+        .menu{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        ul{ 
+            list-style: none;
+            display: inline-flex;
+            padding:20px;
+            gap:25px;
+        }
+        @media (max-width:500px) {
+            ul{
+                display:none;
+            } 
+        }
+        li:hover,.icon:hover{
+            cursor:pointer;
+            transform:translateY(-4px);
+            text-shadow: 1px 1px 2px rgb(132, 132, 166);
+        }
+        .icon{
+            display: none;
+            cursor:pointer;
+            padding: 15px;
+        }
+        .main{
+            background-color: rgb(182, 181, 181);
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        .cards{
+            background-color: rgb(183, 182, 182);
+            display:grid;
+            font-family:Arial, Helvetica, sans-serif;
+            gap:8px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        @media(max-width:500px){
+            .cards{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+            .icon{
+                display:block;
+            }
+        }
+        .hair{
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 2px;
+            border-radius: 4px;
+            background-color: rgb(255, 255, 255);
+        }
+        .fashion{
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 2px;
+            border-radius: 4px;
+            background-color: rgb(255, 255, 255);
+        }
+        .needs{
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 2px;
+            border-radius: 4px;
+            background-color:rgba(237, 222, 177, 0.842);
+        }
+        .products{
+            font-size: 12px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding-top:10px;
+            width:270px;
+             height:300px;
+             display:grid;
+             grid-template-rows: 1fr 1fr;
+             grid-template-columns: 2fr 2fr;
+        }
+        .c{
+            border:px solid rgb(174, 174, 174);
+            width:90%;
+            height:90%;
+            padding:5px;
+        }
+        .c:hover{
+            text-decoration: underline;
+            cursor:pointer;
+            box-shadow:0px 0px 2px 2px rgb(181, 180, 180);
+        }
+        .shopnow:hover{
+            cursor:pointer;
+            box-shadow:0px 0px 2px 2px rgb(181, 180, 180);
+        }
+     </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo"><img src="https://latestlogo.com/wp-content/uploads/2023/12/flipkart-explore-plus.png" width="80px" height="35px"></div>
+        <div class="search">
+            <input type="text" placeholder=" &#128269; 
+ Search for Products, Brands and More" style=width:260px >
+        </div>
+        <div class="menu">
+           <ul>
+            <li><i class="fa-regular fa-circle-user"> </i> Login <i class="fa-solid fa-chevron-up"></i></li>
+            <li><i class="fa-solid fa-cart-shopping"></i> Cart</li>
+            <li><i class="fa-solid fa-basket-shopping"></i> Become a Seller</li>
+           </ul> 
+        </div>
+        <div class="icon"><i class="fa-solid fa-bars"></i></div>
+    </div>
+    <div class="main">
+        <div class="cards">
+        <div class="hair">Hair & Skin Care for Monsoon<br>
+            <div class="products">
+                <div class="c"><img src="https://tse4.mm.bing.net/th/id/OIP.uKdAK1bf8mQPgzNfY_x02QHaHa?pid=Api&P=0&h=220" width="90%" height="70%"><br>
+                Face Wash<br>
+            <span style= color:rgb(19,127,19)>Min. 50% off</span></div>
+                <div class="c">
+                    <img src="https://media6.ppl-media.com/tr:h-750,w-750,c-at_max,dpr-2/static/img/product/343157/livon-hair-serum-for-women-and-men-all-hair-types-for-smooth-frizz-free-and-glossy-hair-100-ml-pack-of-2_1_display_1673615790_4e585b78.jpg"
+                    width="90%" height="70%"><br>
+                   Hair Serum<br>
+                   <span style= color:rgb(19,127,19)>Min. 50% off</span>
+                </div>
+                <div class="c"><img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/dde9174b965004a03834bb901e52413a.jpg?imageView2/2/w/800/q/70/format/webp"
+                    width="90%" height="70%"><br>
+                   Hair claw<br>
+                   <span style= color:rgb(19,127,19)>Top Sellers</span></div>
+                <div class="c">
+        <img src="https://tse2.mm.bing.net/th/id/OIP._t07OXWdzWDPHXILnC5gYgHaHa?pid=Api&P=0&h=220" width="90%" height="70%"><br>
+                   Bath Soap<br>
+                   <span style= color:rgb(19,127,19)>Min. 50% off</span> 
+                </div>
+            </div>
+        </div>
+        <div class="fashion">Fashion's Top Details<br>
+            <div class="products">
+               <div class="c">
+                <img src="https://tse2.mm.bing.net/th/id/OIP.Svd6gg8zxYVtAhy06ggO1QHaHa?pid=Api&P=0&h=220" width="90%" height="70%"><br>
+                 Slippers<br>
+                   <span style= color:rgb(19,127,19)>Min. 70% off</span> 
+               </div>
+                <div class="c">
+                   <img src="https://tse1.mm.bing.net/th/id/OIP.Z76DSQyfcYGJWkKIaqtMEgHaHa?pid=Api&P=0&h=220" width="90%" height="70%"><br>
+                 Men's T-Shirts<br>
+                   <span style= color:rgb(19,127,19)>Min. 50% off</span>  
+                </div>
+                <div class="c">
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.1-ilOGGKdQu8AiVu8ktjnAHaHa?pid=Api&P=0&h=220" width="90%" height="70%"><br>
+                 Casual Shirts<br>
+                   <span style= color:rgb(19,127,19)>Special Offer</span>
+                </div>
+                <div class="c">
+                    <img src="https://tse2.mm.bing.net/th/id/OIP.0iKDUvMNde_DGrZe9n-ASgHaJK?pid=Api&P=0&h=220" width="90%" height="70%"><br>
+                 Women Sarees<br>
+                   <span style= color:rgb(19,127,19)>Special Offer</span>
+                </div>  
+            </div>
+        </div>
+        <div class="needs"><b style="transform:translateY(35px) translateX(20px)"><span style="color: rgb(62, 107, 62); ">
+            Shop your <br>fashion Needs</span></b><br>
+            <p style="font-size: 10px; color:rgb(122, 120, 120); transform:translateX(20px) translateY(20px)">with Latest &<br> Trendy choices</p><br><br>
+            <p class="shopnow" style="font-size: 12px; color:rgb(255, 255, 255); transform:translateX(20px); background-color:rgb(62, 107, 62); width:70px; border-radius:5px " >Shop now ></p>
+         <img  src="boy&girl.png" width="50%" height="60%">
+        </div>
+        </div>
+    </div>
+</body>
+</html>

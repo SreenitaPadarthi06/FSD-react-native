@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Mobile.css">
+    <title>Mobile</title>
+</head>
+<body>
+    <div onclick="Open()" style="cursor:pointer;padding:5px;" >&#9776</div>
+    <div class="mobile-options">
+        <span onclick="Close()"> &#10060;</span><br>
+       <div>Home</div> 
+       <div>Contact</div>
+       <div>Services</div>
+       <div>About</div>
+       <div>Community</div>
+    </div>
+    <script>
+        function Close()
+        {  
+            document.getElementsByClassName("mobile-options")[0].style.left="-190px";
+        }
+        function Open()
+        {
+            document.getElementsByClassName("mobile-options")[0].style.left="0px";
+            console.log("Yes");
+        }
+    </script>
+</body>
+</html>

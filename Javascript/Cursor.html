@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgba(0, 0, 0, 0.51);
+        }
+        .k{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="k" onmouseover="keep()"></div>
+    <script>
+        function keep(){
+            document.getElementsByClassName("k")[0].style.cursor="pointer";
+        }
+    </script>
+</body>
+</html>

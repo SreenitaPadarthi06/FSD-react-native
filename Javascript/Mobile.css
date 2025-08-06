@@ -1,0 +1,32 @@
+body{
+    background: rgb(0, 204, 255);
+}
+.mobile-options{
+    width:140px;
+    height:95svh;
+    background-color: aqua;
+    padding: 15px;
+    top:0px;
+    position: absolute;
+    left: 0;
+    transition: left 0.3s ease;
+    color:rgb(110, 109, 109);
+    display:flex;
+    flex-direction: column;
+}
+.mobile-options div{
+    padding: 10px;
+    border-bottom:2px solid white;
+    cursor: pointer;
+}
+.mobile-options div:hover{
+    background-color: rgb(184, 249, 249);
+    border-radius: 3px;
+}
+span{
+    padding-left:110px;
+}
+span:hover{
+    cursor: pointer;
+    
+}

@@ -1,0 +1,59 @@
+*{
+    margin:0px;
+}
+ 
+.nav{
+    position:relative;
+    background-color: rgb(234, 230, 230);
+    background-image: url('./nice.png');
+    background-position: left;
+    background-size: 15%;
+    background-repeat: no-repeat;
+    height:40px;
+}
+.wrong{
+    cursor:pointer;
+    position:absolute;
+    right: 10px;
+    top:10px;
+}
+.main{
+    display:block;
+    position:relative;
+    height:300px;
+    background-color:rgb(54, 0, 110);
+}
+img{
+    position: absolute;
+    cursor: pointer;
+    margin:10px;
+    left:30px;
+}
+.menu{
+    cursor:pointer;
+    position: absolute;
+    color:rgb(255, 255, 255);
+    top:12px;
+    right:12px;
+}
+.text{
+    position:absolute;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    color:rgb(255, 255, 255);
+    top:100px;
+    left:60px;
+}
+p{
+    font-size: 10px;
+    font-weight:-140px;
+}
+.a{
+    position: absolute;
+   top:-40px;
+    left:500px;
+}
+@media (min-width:500px) {
+    .main{
+        display:none;
+    }
+}

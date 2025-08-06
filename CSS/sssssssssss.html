@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+  margin: 0;
+  height: 100vh;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1000px;
+}
+
+.room {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  transform-style: preserve-3d;
+  transform: rotateX(15deg) rotateY(0deg);
+}
+
+.floor,
+.wall {
+  position: absolute;
+  background: #fff;
+  box-shadow: inset 0 0 60px rgba(0,0,0,0.2);
+}
+
+.top{
+  width: 100%;
+  height: 100%;
+  transform: rotateX(90deg) translateZ(150px);
+}
+
+.wall.left {
+  width: 100%;
+  height: 100%;
+  transform: rotateY(90deg) translateZ(150px);
+}
+
+.wall.right {
+  width: 100%;
+  height: 100%;
+  transform: rotateY(-90deg) translateZ(150px);
+}
+
+    </style>
+</head>
+<body>
+    <div class="room">
+  <div class="top"></div>
+  <div class="bottom"></div>
+  <div class="middle"></div>
+  <div class="wall left"></div>
+  <div class="wall right"></div>
+</div>
+
+</body>
+</html>

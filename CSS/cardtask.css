@@ -1,0 +1,215 @@
+.p1{
+    width:90%;
+    height: 1200px;
+    border:3px solid rgb(2, 206, 162) ;
+    background-color:rgb(194, 244, 221);
+    background-image: linear-gradient( rgb(8, 255, 251) ,rgb(0, 235, 0));
+    display:flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-wrap:wrap;
+    padding:40px;
+    gap: 45px 10px ;
+}
+.c1{
+    width:200px;
+    height: 250px;  
+    border: 2px solid rgb(0, 109, 252) ;
+    background-image: linear-gradient( rgb(8, 255, 251) ,rgb(0, 235, 0));
+    border-radius: 20px;
+    text-align: 50%;
+    box-shadow: 3px 2px 3px 1px rgba(0, 109, 252, 0.662);
+     
+}
+.pic1{
+    width:90px;
+    height: 90px;  
+    border: 2px solid rgb(0, 109, 252) ;
+    background-color:rgb(7, 230, 246);
+    box-shadow: 2px,2px,rgb(0, 109, 252);
+    border-radius: 50px;
+    position:relative;
+    margin:53px;
+    bottom:90px;
+    text-align: center;
+    box-shadow: 0px -2px 3px 1px rgba(0, 109, 252, 0.662);
+    background-image:url("./Kriss.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.text1,.text2,.text3,.text4,.text5,.text6,.text7{
+  font-family: "Share Tech", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.t1,.t2,.t3,.t4,.t5,.t6,.t7
+    {
+    width:170px;
+    height:170px;
+    left:143px;
+    position:relative;
+    margin:-130px;
+    border:px solid gray;    
+    font-size:14px;
+}
+.c2{
+    width:200px;
+    height: 250px;  
+    border: 2px solid rgb(0, 109, 252) ;
+    background-image: linear-gradient( rgb(8, 255, 251) ,rgb(0, 235, 0));
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 3px 2px 3px 1px rgba(0, 109, 252, 0.662) ;
+}
+.pic2{
+     width:90px;
+    height: 90px;  
+    border: 2px solid rgb(0, 109, 252) ;
+    background-color:rgb(7, 230, 246);
+    box-shadow: 2px,2px,rgb(0, 109, 252);
+    border-radius: 50px;
+    position:relative;
+    margin:53px;
+    bottom:90px;
+    text-align: center;
+    box-shadow: 0px -2px 3px 1px rgba(0, 109, 252, 0.662);
+    background-image:url("./Doremon.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.c3{
+    width:200px;
+    height: 250px;  
+    border: 2px solid rgb(0, 109, 252) ;
+    background-image: linear-gradient( rgb(8, 255, 251) ,rgb(0, 235, 0));
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 3px 2px 3px 1px rgba(0, 109, 252, 0.662) ;
+}
+.pic3{
+     width:90px;
+    height: 90px;  
+    border: 2px solid rgb(0, 109, 252) ;
+    background-color:rgb(7, 230, 246);
+    box-shadow: 2px,2px,rgb(0, 109, 252);
+    border-radius: 50px;
+    position:relative;
+    margin:53px;
+    bottom:90px;
+    text-align: center;
+    box-shadow: 0px -2px 3px 1px rgba(0, 109, 252, 0.662);
+    background-image:url("./Ben10.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.c4{
+  width:200px;
+    height: 250px;  
+    border: 2px solid rgb(0, 109, 252) ;
+    background-image: linear-gradient( rgb(8, 255, 251) ,rgb(0, 235, 0));
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 3px 2px 3px 1px rgba(0, 109, 252, 0.662) ;
+}
+.pic4{
+     width:90px;
+    height: 90px;  
+    border: 2px solid rgb(0, 109, 252) ;
+    background-color:rgb(7, 230, 246);
+    box-shadow: 2px,2px,rgb(0, 109, 252);
+    border-radius: 50px;
+    position:relative;
+    margin:53px;
+    bottom:90px;
+    text-align: center;
+    box-shadow: 0px -2px 3px 1px rgba(0, 109, 252, 0.662);
+    background-image:url("./Hiedi.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.c5{
+    width:200px;
+    height: 250px;  
+    border: 2px solid rgb(0, 109, 252) ;
+    background-image: linear-gradient( rgb(8, 255, 251) ,rgb(0, 235, 0));
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 3px 2px 3px 1px rgba(0, 109, 252, 0.662) ;
+}
+.pic5{
+     width:90px;
+    height: 90px;  
+    border: 2px solid rgb(0, 109, 252) ;
+    background-color:rgb(7, 230, 246);
+    box-shadow: 2px,2px,rgb(0, 109, 252);
+    border-radius: 50px;
+    position:relative;
+    margin:53px;
+    bottom:90px;
+    text-align: center;
+    box-shadow: 0px -2px 3px 1px rgba(0, 109, 252, 0.662);
+    background-image:url("./Chota Bheem.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.c6{
+   width:200px;
+    height: 250px;  
+    border: 2px solid rgb(0, 109, 252) ;
+    background-image: linear-gradient( rgb(8, 255, 251) ,rgb(0, 235, 0));
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 3px 2px 3px 1px rgba(0, 109, 252, 0.662) ;
+}
+.pic6{
+     width:90px;
+    height: 90px;  
+    border: 2px solid rgb(0, 109, 252) ;
+    background-color:rgb(7, 230, 246);
+    box-shadow: 2px,2px,rgb(0, 109, 252);
+    border-radius: 50px;
+    position:relative;
+    margin:53px;
+    bottom:90px;
+    text-align: center;
+    box-shadow: 0px -2px 3px 1px rgba(0, 109, 252, 0.662);
+   background-image:url("./Tom&Jerry.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.c7{
+   width:200px;
+    height: 250px;  
+    border: 2px solid rgb(0, 109, 252) ;
+    background-image: linear-gradient( rgb(8, 255, 251) ,rgb(0, 235, 0));
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 3px 2px 3px 1px rgba(0, 109, 252, 0.662) ;
+}
+.pic7{
+     width:90px;
+    height: 90px;  
+    border: 2px solid rgb(0, 109, 252) ;
+    background-color:rgb(7, 230, 246);
+    box-shadow: 2px,2px,rgb(0, 109, 252);
+    border-radius: 50px;
+    position:relative;
+    margin:53px;
+    bottom:90px;
+    text-align: center;
+    box-shadow: 0px -2px 3px 1px rgba(0, 109, 252, 0.662);
+    background-image:url("./Shinchan.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+

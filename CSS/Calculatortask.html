@@ -1,0 +1,90 @@
+<html>
+    <head><title>Grid</title>
+    <style>
+       /*.bg{
+    width:100%;
+    height:700px;
+    background-image: linear-gradient(rgb(127, 255, 219)10%, rgba(137, 255, 243, 0.942) 50%, rgb(150, 210, 239)90%); 
+     }*/
+    .p{
+        width: 300px;
+        height:300px;
+        margin:50px;
+        border: 1px solid black;
+        border-radius: 10px;
+        color:white;
+        position:absolute;
+        background-color: black;
+        box-shadow: 2px 2px 3px 3px gray;
+       }
+       .display{
+         width: 90%;
+        height:20%;
+        margin:15px;
+        text-align:end;
+        font-size:60px;
+        font-family: Share Tech Mono;
+        position:relative;
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: rgb(140, 143, 143);
+       }
+       .border{
+         width: 290px;
+        height:205px;
+        top:-5px;
+        margin:4px;
+        position:relative;
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: rgb(151, 153, 153);
+        display: grid;
+        grid-template-rows: 1fr 1fr  1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+       }
+       .c{
+        width: 30px;
+        height:15px;
+        background-color: rgba(160, 160, 157, 0.863);
+        color:black;
+        text-align:center;
+        padding: 15px;
+        border:1px solid black;
+        border-radius: 10px;
+        justify-self: center;
+        align-self:center;
+        box-shadow: 1px 2px 1px 1px gray;
+        
+       }
+       .c:hover{
+        background-color:rgb(152, 152, 115) ;
+       }
+    </style>
+</head>
+<body>
+    <div class="bg"></div>
+        <div class="p">
+        <div class="display">0</div>
+        <div class="border">
+        <div class="c">%</div>
+        <div class="c">/</div>
+        <div class="c">+</div>
+        <div class="c">-</div>
+        <div class="c">*</div>
+        <div class="c">.</div>
+        <div class="c">=</div>
+        <div class="c">9</div>
+        <div class="c">5</div>
+        <div class="c">6</div>
+        <div class="c">7</div>
+        <div class="c">8</div>
+        <div class="c">1</div>
+        <div class="c">2</div>
+        <div class="c">3</div>
+        <div class="c">4</div>
+        </div>        
+    </div>
+    
+
+</body>
+</html>

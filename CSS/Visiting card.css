@@ -1,0 +1,58 @@
+.bg{
+   
+    
+}
+.fcard{
+    
+    width:250px;
+    height:150px;
+    margin:60px;
+    border:1px  solid rgb(235, 251, 254);
+    position:absolute;
+    border-radius:8px 8px 8px 8px;
+    background-image: linear-gradient(rgb(127, 255, 219)10%, rgba(137, 255, 243, 0.942) 50%, rgb(150, 210, 239)90%); 
+    box-shadow: 6px 2px 1px 1px  rgba(203, 252, 247, 0.74) ;
+    
+}
+
+.text 
+{ font-size: 15px;
+  font-family: "Caveat", cursive;
+  margin:1px;
+}
+
+
+.image{
+    width:80px;
+    height:80px;
+    left:160px;
+    border:1px  solid rgb(107, 188, 183);
+    position:absolute;
+    border-radius:80px ;
+    background-image:url("./MyPic.jpg");
+    background-size:cover;
+    opacity:0.9;
+    position:absolute;
+    background-repeat: no-repeat;
+    background-position:top right;
+}
+.clg
+{
+  
+}
+.contact{
+  width:50px;
+    height:50px;
+    left:190px;
+    bottom:10px;
+    margin:-1px;
+    border:1px  solid rgb(107, 188, 183);
+    position:absolute;
+    border-radius:8px ;
+    background-image:url("./Qr.png");
+    background-size:cover;
+    opacity:0.9;
+    position:absolute;
+    background-repeat: no-repeat;
+    background-position:top right;
+}

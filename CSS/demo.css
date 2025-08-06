@@ -1,0 +1,37 @@
+
+.shape
+{
+   /* border-bottom-left-radius:7px;
+    border-bottom-color: aquamarine;
+    border-bottom-style: groove;
+
+    border-bottom-right-radius:7px;
+    border-bottom-color: rgb(7, 59, 173);
+    border-bottom-style: dotted;
+
+    border-top:7px;
+    border-top-color: rgb(7, 59, 173);
+    border-top-style: dotted;
+
+    border-left:7px;
+    border-left-color: rgb(7, 59, 173);
+    border-left-style: dotted;
+
+    border-right:7px;
+    border-right-color: rgb(7, 59, 173);
+    border-right-style: dotted;*/
+    background-color:rgb(243, 235, 6);
+    width:300px;
+    height:300px;
+    border:6px solid rgb(218, 218, 74);
+    border-bottom-left-radius:150px ;
+    border-bottom-right-radius:150px;
+}
+.child
+{   background-color:rgb(6, 243, 235);
+    width:50%;
+    height:50%;
+    border:3px dashed rgb(32, 80, 81);
+    border-radius:120px ;
+    
+}

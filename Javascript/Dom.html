@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <!-- <div class="dog" id="num">Divission-tag</div>
+    <span id="num">Span tag</span>
+    <section class="My">You</section>
+    <section id="Deer">Mee</section>
+    <p class="para">Frog</p> --><br>
+    <img class="pic" src="Bird.png" width="50%" height="50%" style="position:relative"><br>
+    <button class="Top" onclick="fun()" >Top</button>
+    <button class="Pos">Bottom</button><br><br>
+    <button class="Pos">Left</button>
+    <button class="Pos">Right</button>
+    <script>
+       // console.log(document.getElementsByClassName("dog"));
+       // console.log(document.getElementById("num"));
+       // console.log(document.getElementsByTagName("Section"));
+        //console.log(document.querySelector("p"));
+      function fun(){
+        document.getElementsByClassName("pic")[0].style.left="100px";
+         document.getElementsByClassName("pic")[1].style.right="100px";
+       }
+    </script>
+</body>
+</html>

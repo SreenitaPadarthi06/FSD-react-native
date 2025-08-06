@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First</title>
+    <script>
+        var d=new Date;
+        console.log(d.getDay());
+        console.log(d.getMonth());
+        console.log(d.getFullYear());
+        console.log(d.getHours());
+        var s={100:20,'Thub':2,'h':'i'}
+        Object.entries(s).map(ele =>{
+          console.log("key:",ele[0],"Value:",ele[1]);
+          console.log("key:",ele[0]);
+        });
+        var k="S,r,E,e";
+        var a="Deer"
+        console.log(k.toLowerCase());
+        console.log(k.toUpperCase());
+        console.log(k.replace('E','i'));
+        console.log(a.replaceAll('e','I'));
+        console.log(k.split(','));
+        console.log(k.indexOf('S'));
+        console.log(a.lastIndexOf('e'));
+        console.log(s[20]);
+        console.log("Entries",Object.entries(s));
+        console.log("Keys",Object.keys(s));
+        console.log("Values",Object.values(s));
+        b=[1,5,2,3,6,7,10];
+        console.log(b.filter(ele=> ele%2==0))
+       console.log(parseFloat(Math.random()*100));
+        console.log(Math.min(1,2,3));
+        console.log(Math.max(1,2,3));
+        console.log(Math.ceil(1.2));
+        console.log(Math.floor(3.2));
+        var y=[1,93,20,4,69,67];
+        console.log(y.sort((x,y) => x-y));
+    </script>
+</head>
+<body>
+    <div>Hello</div>
+</body>
+</html>

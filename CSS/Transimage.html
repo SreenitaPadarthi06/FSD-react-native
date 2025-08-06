@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image model</title>
+    <style>
+        body{
+            width:100%;
+            height:100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin:0px;
+            overflow: hidden;
+        }
+       .main{
+        width:170px;
+        height:120px;
+        background-color: aliceblue;
+        border:px solid gray;
+        perspective-origin: center;
+        transform-style: preserve-3d;
+        box-shadow: 1px 1px 3px 3px black;
+        z-index: 2px;
+       }
+       .up{
+          position: absolute;
+        margin-bottom: 240px;
+        transform-style: preserve-3d;
+            perspective: 1000px;
+            perspective-origin: bottom;
+            border:1px solid gray;
+            background-color: aliceblue;
+            width: 170px;
+            height:120px;
+            transform-origin:0px 0px ;
+            transform:  rotateX(90deg) translatey(0deg);
+            box-shadow: 1px 1px 3px 3px black;
+       }
+       .down{
+        position: absolute;
+        margin-top: 240px;
+        transform-style: preserve-3d;
+        perspective: 1000px;
+        perspective-origin: bottom;
+        border:1px solid gray;
+        background-color: aliceblue;
+        width: 170px;
+        height:120px;
+        transform-origin:0px 0px ;
+        box-shadow: 1px -1px 3px 3px black;
+        }
+       .left{
+        position: absolute;
+        margin-left: 260px;
+        transform-style: preserve-3d;
+            perspective: 1000px;
+            perspective-origin: bottom;
+            border:1px solid gray;
+            background-color: aliceblue;
+            width: 80px;
+            height:112px;
+            transform:rotateX(10deg) rotateY(-15deg);
+             box-shadow: 1px 1px 3px 3px black;
+       }
+       .right{
+         position: absolute;
+        margin-left: -260px;
+        transform-style: preserve-3d;
+            perspective: 1000px;
+            perspective-origin: bottom;
+            border:1px solid gray;
+            background-color: aliceblue;
+            width: 80px;
+            height:112px;
+            transform: rotateX(10deg) rotateY(15deg);
+             box-shadow: 1px 1px 3px 3px black;
+       }
+       
+    </style>
+</head>
+<body>
+    <div class="main"></div>
+    <div class="up"></div>
+    <div class="down"></div>
+<div class="left"></div>
+<div class="right"></div>
+
+    
+</body>
+</html>

@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Demo</title>
+        <style>
+          .parent1 h1{ /* Here if I wont give space and
+                           the h1 then all h1 and p tags will get aqua color*/
+            color: aqua;
+          }
+          .parent2 >h1{ 
+            color: rgb(251, 0, 255);
+          }
+          div+p{
+            color:chartreuse;
+          }
+         .parent4 ~div{ 
+            color: rgb(255, 115, 0);
+          }
+        </style>
+    </head>
+    <body>
+        <h1>Top Outer H1</h1>
+        <div class="Parent1">
+            <h1>First</h1>
+            <h1>Second</h1>
+           <div>
+             <h1>Inner Child</h1>
+           </div>
+           <p>Third</p>
+        </div>
+        <h1>Bottom Outer h1</h1> 
+        <br>
+        <h1>Top Outer H1</h1>
+        <div class="Parent2">
+            <h1>First</h1>
+            <h1>Second</h1>
+           <div>
+             <h1>Inner Child</h1>
+           </div>
+           <p>Third</p>
+        </div>
+        <h1>Bottom Outer h1</h1> 
+        <br>
+        <div>Division</div>
+        <p>Paragraph 1</p>
+        <p>Paragraph 2</p>
+        <span>Span</span>
+        <p>Paragraph</p>
+        <div>Division</div>
+        <p>Paragraph3</p>
+         <div class="Parent4">
+            <h2>First</h2>
+            <h2>Second</h2>
+           <div>
+             <h1>Inner Child</h1>
+           </div>
+           <p>Third</p>
+        </div>
+    </body>
+</html>

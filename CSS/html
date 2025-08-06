@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer and Buyer Interface</title>
+    <link rel="stylesheet" href="h.css">
+    <link rel="stylesheet" href="product.css">
+    <style>
+        .request-section {
+            background-color: #28a745;
+            padding: 15px 30px;
+            margin-top: 10px;
+            text-align: left;
+            font-size: 18px;
+            font-weight: 500;
+            color: #fff;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            top: 80px;
+            right: 20px;
+            width: 350px;
+        }
+        .request-section a {
+            background-color: #fff;
+            color: #28a745;
+            font-weight: bold;
+            padding: 10px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .request-section a:hover {
+            background-color: #218838;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+<header class="bg"> 
+        <nav class="navbar">
+            <div class="logo">RAITHU BAZAR</div>
+
+            <ul class="nav-links">
+                <li><a id="home-link" href="home.php">Home</a></li>
+                <li><a id="products-link" href="productsdisplay.php">Products list</a></li>
+
+                <li><a id="products-link" href="requestdisplay.php">Requests list</a></li>
+                <li><a id="products-link" href="productsupload.php">Upload your stock here</a></li>
+
+                <li><a id="trends-link" href="trends.php">Trends</a></li>
+                <li class="dropdown">
+                <a id="about-link" href="#">About</a>
+                    <ul class="dropdown-menu">
+                        <li><a id="about-us" href="aboutus.php">About Us</a></li>
+                        <li><a id="faqs" href="faq.php">FAQ'S</a></li>
+                    </ul>
+                </li>
+                <li class="home-link">
+                    <?php
+                    if (isset($_SESSION['f_id'])) {
+                        echo '<a id="profile-link" href="farmer_profile.php">Farmer Profile</a>';
+                    } elseif (isset($_SESSION['c_id'])) {
+                        echo '<a id="profile-link" href="customer_profile.php">Customer Profile</a>';
+                    } else {
+                        echo '<a id="register-login" href="login.php">Register/Login</a>';
+                    }
+                    ?>
+                </li>
+              <a href="contactus.html">  <li><button id="contact-us"  class="contact-btn">Contact Us</button></li></a>
+            </ul>
+            
+        </nav>
+    
+        <div class="request-section">
+            <p>Doesn't find anything interesting? <a href="request.php">Want to request?</a></p>
+        </div>
+        <section class="search-bar">
+            <input type="text" id="search-input" placeholder="Search for crops..." onkeyup="searchProducts()">
+            <button onclick="searchProducts()"  id="">Search</button>
+        </section>
+        <section class="products" id="product-list">
+            <?php $result = mysqli_query($conn, $sql);
+if (!$result) {
+    die("SQL Error: " . mysqli_error($conn));
+}
+?>
+            <?php while ($row = mysqli_fetch_assoc($result)) { ?>
+            <div class="product-card" data-name="<?php echo $row['crop_name']; ?>" onclick="openPopup(<?php echo htmlspecialchars(json_encode($row), ENT_QUOTES, 'UTF-8'); ?>)">
+                <img src="<?php echo $row['crop_image']; ?>" alt="<?php echo $row['crop_name']; ?>" class="product-image">
+                <div class="product-info">
+                    <h3 class="crop-name"><?php echo $row['crop_name']; ?></h3>
+                    <p class="crop-description"><?php echo $row['crop_description']; ?></p>
+                    <button class="view-more">
+    <a href="crop_details.php?cr_id=<?php echo $row['cr_id']; ?>" class="view-more">View More</a>
+</button>
+
+
+                    
+                </div>
+            </div>
+            <?php } ?>
+        </section>
+        <div id="popup" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <img id="popup-image" src="" alt="Crop Image" class="popup-image">
+        <h3 id="popup-name"></h3>
+        <p id="popup-description"></p>
+        <p><strong>Availability:</strong> In stock</p>
+        <p><strong>Price:</strong> <span id="popup-price"></span></p>
+        <p><strong>Farmer Name:</strong> <span id="popup-farmer-name"></span></p>
+        <p><strong>Farmer Address:</strong> <span id="popup-farmer-address"></span></p>
+        <p><strong>Farmer Phone:</strong> <span id="popup-farmer-phone"></span></p>
+        <button class="contact-farmer" id="contact-farmer-btn">Contact Farmer</button>
+
+    </div>
+</div>
+
+
+
+
+            <?php
+// Assuming $phone contains the farmer's phone number retrieved from the database
+$phone = "9494661608"; // Example phone number
+echo '<a href="tel:' . $phone . '"><button>Contact Farmer</button></a>';
+?>
+
+            </header>
+
+            
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section about">
+            <h3>About Us</h3>
+            <p>Raitu Bazar is a platform that connects farmers directly with buyers, eliminating middlemen and ensuring fair prices for both.</p>
+        </div>
+
+        <div class="footer-section quick-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="productsdisplay.html">Products</a></li>
+                <li><a href="requestdisplay.html">Requests</a></li>
+                <li><a href="productsupload.html">Upload Produce</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="faq.html">FAQs</a></li>
+                <li><a href="login.html">Register/Login</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section contact">
+            <h3>Contact Us</h3>
+            <p>Email: support@raithubazar.com</p>
+            <p>Phone: +91 9492188027</p>
+            <p>Location: kakinada, India</p>
+        </div>
+
+        <div class="footer-section social">
+            <h3>Developed by</h3>
+            <p>CH.Sadhvi</p>
+            <p>A.Praneetha</p>
+            <p>Y.Swaritha</p>
+            <p>sai satish</p>
+            <p>vishnu</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Raitu Bazar. All Rights Reserved.</p>
+    </div>
+</footer>
+
+    <script>
+function openPopup(cropData) {
+    document.getElementById('popup-image').src = cropData.crop_image;
+    document.getElementById('popup-name').textContent = cropData.crop_name;
+    document.getElementById('popup-description').textContent = cropData.crop_description;
+    document.getElementById('popup-price').textContent = '$' + cropData.crop_price + ' per kg';
+    document.getElementById('popup-farmer-name').textContent = cropData.farmer_name;
+    document.getElementById('popup-farmer-address').textContent = cropData.farmer_address;
+    document.getElementById('popup-farmer-phone').textContent = cropData.farmer_phone; 
+
+    // Set call functionality
+    let contactButton = document.getElementById('contact-farmer-btn');
+    contactButton.onclick = function() {
+        window.location.href = "tel:" + cropData.farmer_phone;
+    };
+
+    document.getElementById('popup').style.display = 'flex';
+}
+
+
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+        }
+    </script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    // Speak "Welcome to Home Page" when the page loads
+    speakText("Products page ki swagatham", "en");
+
+    // Add event listeners to all speaker icons
+    document.querySelectorAll(".speak-btn").forEach(button => {
+        button.addEventListener("click", function() {
+            let text = this.previousElementSibling.innerText; // Get the text before the button
+            speakText(text, "en"); // Change 'en' to a different language if needed
+        });
+    });
+});
+
+function speakText(text, lang = 'en') {
+    if ('speechSynthesis' in window) {
+        let speech = new SpeechSynthesisUtterance(text);
+        speech.lang = lang;
+        speech.rate = 1; // Adjust speed if needed
+        window.speechSynthesis.speak(speech);
+    } else {
+        alert("Your browser does not support text-to-speech.");
+    }
+}
+
+</script>
+</body>
+</html>

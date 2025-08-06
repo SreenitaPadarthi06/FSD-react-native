@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Task</title>
+    <style>
+        body{
+             width:100%;
+      height:100vh;
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+        }
+   .par{
+      width:100%;
+      height:460px;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      background-image:linear-gradient(rgb(135, 229, 255),10%,white 60%);
+      transition: p 2s ease-in;
+    }
+  .par:hover
+    
+    {
+        background-image:linear-gradient(black,white);
+            }  
+           
+        .road{
+    width:100%;
+    height:100px;
+    position:absolute;
+    background-color: rgba(96, 87, 87, 0.805);
+    bottom:10px;
+}
+.child1{
+    width:100%;
+    height:20px;
+    position:absolute;
+    background-color: rgba(3, 175, 75, 0.896);
+}
+.mark1{
+    width:60px;
+    height:15px;
+    position:absolute;
+    background-color: rgb(255, 255, 255);
+    top:40px;
+    right:200px;
+}
+.mark2{
+    width:60px;
+    height:15px;
+    position:absolute;
+    background-color: rgb(255, 255, 255);
+    top:40px;
+    right:300px;
+}
+.mark3{
+    width:60px;
+    height:15px;
+    position:absolute;
+    background-color: rgb(255, 255, 255);
+    top:40px;
+    right:400px;
+}
+.mark4{
+    width:60px;
+    height:15px;
+    position:absolute;
+    background-color: rgb(255, 255, 255);
+    top:40px;
+    right:500px;
+}
+.mark5{
+    width:60px;
+    height:15px;
+    position:absolute;
+    background-color: rgb(255, 255, 255);
+    top:40px;
+    right:600px;
+}
+.mark6{
+    width:60px;
+    height:15px;
+    position:absolute;
+    background-color: rgb(255, 255, 255);
+    top:40px;
+    right:700px;
+}
+.car{
+     width:250px;
+    height:200px;
+    border:px solid black;
+    position:absolute;
+    background-image: url("./Car.png");
+    background-size: 99%;
+    background-repeat: no-repeat;
+    top:-120px;
+    right:-590px;
+    transition: all 1s ease-in;
+    position: relative;
+    z-index:100px;
+         }
+        .car:hover{
+           
+            right:5px;
+        }
+        
+     .sun{
+         width:60px;
+     height:60px;
+     border:8px solid hsla(249, 130, 80,0.5);
+    position:absolute;
+    border-radius:60px;
+    right:10px;
+    bottom:300px;
+    margin:40px;
+   background-color: rgb(255, 217, 0) ;
+    box-shadow: 1px 1px 3px 3px rgb(255, 106, 0);
+    transition: background-color 2s  ease-in;
+     }
+   .sun:hover {
+                background-color: rgb(255, 255, 255);
+               box-shadow: 1px 1px 3px 3px rgb(179, 179, 179);                    
+            }
+    .bird{
+        border:px solid black;
+        width:30px;
+        position: absolute;
+        height: 30px;
+        background-image: url("./Yellowbird.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 30px;
+        left:20px;
+        transition: all 9s linear;
+    }
+    .clouds{
+        border:px solid black;
+        width:500px;
+        position: absolute;
+        height: 160px;
+        left:20px;
+        background-image: url("./clouds.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: -250px;
+        transition: all 20s linear;
+    }
+
+ .bird:hover,.clouds:hover {
+                left:450px;
+            }
+
+    .tree1{
+      width:200px;
+    height:250px;
+    border:px solid black;
+    position:absolute;
+    background-image: url("./Tree1.png");
+    background-size:99%;
+    background-repeat: no-repeat;
+    bottom:37px;
+    right:10px;
+    position: absolute;   
+    z-index: -2px;
+    }
+    .tree2{
+        width:250px;
+    height:300px;
+    border:px solid black;
+    position:absolute;
+    background-image: url("./Tree2.png");
+    background-size:99%;
+    background-repeat: no-repeat;
+    bottom:70px;
+    right:400px;
+    position: absolute;   
+    z-index: -2px;
+    }
+    .fall1{
+        border:px solid black;
+        width:30px;
+        position: absolute;
+         background-image: url("./Flowering.png");
+         background-size: cover;
+        height: 30px;
+        top:50%;
+        transition: all 2s  linear;
+        right:190px;
+    }
+    .fall1:hover{
+        top:250px;
+    }
+    .fall2{
+        border:px solid black;
+        width:30px;
+        position: absolute;
+         background-image: url("./Flowering.png");
+         background-size: cover;
+        height: 30px;
+        top:50%;
+       transition: all 2s  linear;
+        right:90px;
+    }
+    .fall2:hover{
+        top:250px;
+    }
+    .fall3{
+        border:px solid black;
+        width:30px;
+        position: absolute;
+         background-image: url("./Flowering.png");
+         background-size: cover;
+        height: 30px;
+        top:40%;
+        transition: all 2s  linear;
+        right:150px;
+    }
+   .fall3:hover{
+        top:250px;
+    }
+   
+   
+   .light1{
+    height:120px;
+    width:10px;
+    border:px solid black;
+     background-color: rgb(111, 111, 111);
+            border-radius: 3px;
+            box-shadow: 2px 2px 3px 1px rgb(181, 181, 181);
+            animation: My 2s ease-in infinite;
+            position: absolute;
+             bottom:90px;
+    right:340px;
+    position: absolute;   
+    z-index: -2px;
+    
+   }  
+   .light2{
+    height:120px;
+    width:10px;
+    border:px solid black;
+     background-color: rgb(111, 111, 111);
+            border-radius: 3px;
+            box-shadow: 2px 2px 3px 1px rgb(181, 181, 181);
+            animation: My 2s ease-in infinite;
+            position: absolute;
+             bottom:90px;
+    right:700px;
+    position: absolute;   
+    z-index: -2px;  
+    
+   } 
+   .g1{
+     height:35px;
+    width:35px;
+    border:px solid black;
+     
+            border-radius: 30px;
+            box-shadow: 2px 2px 3px 1px rgb(181, 181, 181);
+            animation: My 2s ease-in infinite;
+            position: absolute;
+             bottom:120px;
+    left:-13px;
+    position: absolute;   
+    z-index: -2px;  
+     transition:all 5px ease-in;
+    
+   }
+
+   .g1:hover{
+            
+                background-color: rgb(254, 254, 12);
+                  box-shadow:2px 2px 3px 4px rgb(255, 242, 0) ;     
+            }
+    
+   .g2{
+     height:35px;
+    width:35px;
+    border:px solid black;
+                border-radius: 30px;
+            box-shadow: 2px 2px 3px 1px rgb(181, 181, 181);
+            animation: My 2s ease-in infinite;
+            position: absolute;
+             bottom:120px;
+    right:-13px;
+    position: absolute;   
+    z-index: -2px;  
+   transition:all 5px ease-in;
+    
+   }
+
+   .g2:hover{
+            
+                background-color: rgb(254, 254, 12);
+                  box-shadow:2px 2px 3px 4px rgb(255, 242, 0) ;     
+            }
+    
+    </style>
+</head>
+<body>
+    <div class="par">
+        <div class="road">
+            <div class="tree1"></div>
+        <div class="tree2">
+            <div class="fall1"></div>
+            <div class="fall2"></div>
+            <div class="fall3"></div>
+        </div>
+        <div class="light1">
+            <div class="g1"></div>
+        </div>
+        <div class="light2"><div class="g2"></div></div>
+              
+            <div class="child1">
+                <div class="mark1"></div>
+                <div class="mark2"></div>
+                <div class="mark3"></div>
+                <div class="mark4"></div>
+                <div class="mark5"></div>
+                <div class="mark6"></div>
+                <div class="car"></div>
+                </div>
+            </div>
+        <div class="sun"></div>
+        <div class="bird"></div>
+        <div class="clouds"></div>
+       
+    </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+  <style>
+    body{
+       background-color: pink;
+    }
+    table {
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    td {
+      background-color: plum;
+      width: 100px;
+      height: 60px;
+      border: 1px solid black;
+      text-align: center;
+      vertical-align: middle;
+      font-size: 20px;
+    }
+
+    input {
+      margin: 5px;
+    }
+  </style>
+</head>
+<body>
+  <input type="number" placeholder="rows" id="r"/>
+  <input type="number" placeholder="columns" id="c"/>
+  <button onclick="fun()">Get Table</button>
+
+  <script>
+    function fun() {
+
+      let table = document.createElement("table");
+      let row = document.getElementById("r").value;
+      let col = document.getElementById("c").value;
+
+      for (let i = 0; i < row; i++) {
+        let tr = document.createElement("tr");
+        for (let j = 0; j < col; j++) {
+          let td = document.createElement("td");
+          tr.appendChild(td);
+        }
+        table.appendChild(tr);
+      }
+
+      document.body.appendChild(table);
+    }
+  </script>
+</body>
+</html>

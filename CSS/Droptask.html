@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <title>DropDown</title>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/abs/font-awesome/6.7.2/css/all.an.css"antegaty="sha512-Evv84Mr4kqVGRNSaGL/F/aDqQb7xQ2vcrawxfjThSH8CSR7PBEakCr51Ck+w+/U6swUam1vVX0SVk9ABhg==" crossoaan="anonymous" referrerpoacy="no-referrer" />
+     <style>
+         .nav{
+          width:100%;
+          height:70px;
+          
+          box-shadow: 2px 2px 3px 3px rgb(212, 210, 210);
+         }
+         
+         .posi{
+          list-style: none;
+          position: absolute;
+          padding-left: 100px;
+            padding-top: 20px;
+            display: flex;
+            background-image: url("./Bubble back.png");
+            background-size: 10%;
+            background-repeat: no-repeat;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-items: center;
+            align-items: center;
+         }
+         .par{
+          
+          align-items: center;
+ display: flex;
+ flex-direction: column;
+         }
+        
+         
+         .c1{
+          
+   text-align:center;
+   font-size:15px;
+   padding: 10px;
+}
+.c2{
+  position: absolute;
+   display: none;
+   top: 100%;
+            background-color: white;
+            box-shadow: 2px 2px 4px rgb(200, 200, 200);
+            padding: -10px;
+            min-width: 120px;
+
+}
+.submenu{
+    padding:10px;
+}
+.par:hover .c2{
+    display:block;
+}
+.submenu:hover{
+    background-color: aquamarine;
+    color:pink;
+}
+        
+     </style>
+     </head>
+        <nav class="nav">
+          
+          <ul class="posi">
+            
+            <div class="par" >Home
+              <div class="c1">
+                <div class="c2"> <div class="child2">
+                <div class="submenu">opt 1</div>
+                <div class="submenu">opt 2</div>
+                <div class="submenu">opt 3</div>
+                <div class="submenu">opt 4</div>
+                <div class="submenu">opt 5</div>
+            </div></div>
+              </div>
+            </div>
+            <div class="par">About
+              <div class="c1">
+                <div class="c2">
+                  <div class="submenu">opt 1</div>
+                <div class="submenu">opt 2</div>
+                <div class="submenu">opt 3</div></div>
+              </div>
+            </div>
+            <div class="par">Products
+              <div class="c1">
+                <div class="c2">
+                  <div class="submenu">opt 1</div>
+                <div class="submenu">opt 2</div>
+                <div class="submenu">opt 3</div>
+              <div class="submenu">opt 4</div></div>
+              </div>
+            </div>
+            <div class="par">Retail
+              <div class="c1">
+                <div class="c2">
+                  <div class="submenu">opt 1</div>
+                  <div class="submenu">opt 2</div>
+                  <div class="submenu">opt 3</div>
+                </div>
+              </div>
+            </div>
+          </ul>
+        </nav>
+        
+       
+    </body>
+</html>

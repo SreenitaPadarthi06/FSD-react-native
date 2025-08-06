@@ -1,0 +1,95 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+ body{
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+} 
+       .nav{
+        float:left;
+        width:100%;
+        position:fixed;
+        background-color: rgba(213, 37, 37, 0.789);
+        border:1px solid rgb(255, 114, 109);
+         color:aliceblue;
+         z-index: 9999;
+        }
+        .logo,.navbar{
+            padding-top:10px;
+            padding-bottom:10px;
+        }
+        .navbar{
+            display:flex;
+            justify-content:space-around;
+            align-items:center;
+            padding-top: 10px;
+             z-index: 9999;
+        }
+       .nav li{ 
+            list-style:none;
+            display:inline-block;
+            padding-right: 10px;
+        }
+        .main{
+             display:flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    justify-content:space-evenly;
+    align-items: center;
+    gap: 35px 10px ;
+        }
+        .Ann{
+            color:white;
+           transform: translateY(40px);
+           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .matter{
+            display:grid;
+            background-color: black;
+            font-family:Arial, Helvetica, sans-serif;
+            gap:40px;
+            padding: 50px 40px 40px 40px;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .b1{
+            width:100%;
+            height:auto;
+            color:white;
+            padding:10px;
+            font-size: 14px;
+            border-radius:10px;
+            background-color: rgba(176, 173, 173, 0.247);
+            box-shadow:0 4px 8px rgba(0,0,0,0.2);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .b1:hover{
+            cursor: pointer;
+            transform: translateX(3px) translateY(3px);
+            box-shadow: 0px 4px 8px rgb(255, 92, 63);
+        }
+        .Knowmore{
+            color: aliceblue;
+             background:linear-gradient(to right,rgba(255, 29, 29, 0.475));
+             font-size: 13px;
+            border:1px solid rgb(255, 102, 97);
+            border-radius:3px;
+            padding:5px;
+        }
+        .Knowmore:hover{
+            transform: translateY(2px);
+            background-color: rgb(250, 64, 64);
+            
+        }
+         @media(max-width:768px){
+            .matter{
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        @media(max-width:450px) {
+            .matter{
+                grid-template-columns: 1fr;
+            }
+        }
+        

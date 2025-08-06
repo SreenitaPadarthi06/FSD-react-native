@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic lights
+    </title>
+    <style>
+        *{
+            background-color: aliceblue;
+            margin:0px;
+        }
+       .rect{
+              width:60px;
+              height:150px;
+              background-color: rgba(71, 71, 71, 0.797);
+              border-radius: 4px;
+              margin-top:60px;
+              margin-left: 170px;
+       }
+       .red
+       {
+        width:40px;
+        height:40px;
+        position: absolute;
+        font-size: 0px;
+        color:rgb(181, 1, 1);
+        border-radius:50%;
+        background:radial-gradient(rgba(255, 255, 255, 0.821)0%,rgb(255, 0, 0));
+        margin-top:5px;
+        margin-left: 10px;
+       }
+       .red:hover{
+        cursor:pointer;
+        text-shadow: 2px 2px 3px rgb(233, 122, 122);
+          text-align:center;
+          font-size:20px;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+       }
+        .orange
+       {
+        width:40px;
+        height:40px;
+        position: absolute;
+        border-radius:50%;
+         font-size: 0px;
+        color:rgb(255, 183, 0);
+        background:radial-gradient(rgba(255, 255, 255, 0.821)0%,rgb(255, 217, 0));
+        margin-top:55px;
+        margin-left: 10px;
+       }
+       .orange:hover{
+        cursor:pointer;
+        text-shadow: 2px 2px 3px yellow;
+           text-align:center;
+          font-size:20px;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+       }
+        .green
+       {
+        width:40px;
+        height:40px;
+         font-size: 0px;
+        color:rgb(68, 162, 1);
+        position: absolute;
+        border-radius:50%;
+        background:radial-gradient(rgba(255, 255, 255, 0.821)0%,rgb(68, 162, 1));
+        margin-top:105px;
+        margin-left: 10px;
+       }
+       .green:hover{
+        cursor:pointer;
+           text-shadow:2px 2px 3px rgb(72, 254, 118);
+           text-align:center;
+          font-size:20px;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+       }
+      .pole{
+         width:20px;
+        height:250px;
+        position: absolute;
+        background:radial-gradient(rgba(255, 255, 255, 0.821)0%,rgb(95, 94, 94));
+        margin-top:150px;
+        margin-left: 20px;
+      }
+    </style>
+</head>
+<body>
+    <div class="rect">
+        <div class="red">Stop</div>
+        <div class="orange">Wait</div>
+        <div class="green">Go</div>
+        <div class="pole"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+        }
+        .nav{
+            background-color: rgba(255, 17, 56, 0.481);
+            border:1px solid purple;
+            height:50px;
+        }
+        .navbar{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding-top: 10px;
+        }
+        li{
+            list-style:none;
+            display:inline-block;
+            padding-right: 10px;
+        }
+        li:hover{
+            cursor:pointer;
+            color:rgb(193, 192, 192)
+        }
+        .menu{
+            display:none;
+        }
+        @media (min-width:500px){
+        .menu{
+            display:block;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="navbar">
+            <div class="logo">Technical hub</div>
+            <div class="menu">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Content</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <button>Login</button>
+        </div>
+    </div>
+</body>
+</html>

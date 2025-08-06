@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar system    </title>
+    <style>
+        .par{
+            width:900px;
+            height:700px;
+            position: relative;
+            background-image: linear-gradient(black);
+            background-image: url("https://wallpaperaccess.com/full/741658.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .sun{
+            width:50px;
+            height:50px;
+            border-radius: 50%;
+            box-shadow: 1px 3px 4px 2px rgb(255, 213, 0);
+            background-color:yellow;
+            background-image: linear-gradient(rgb(255, 217, 0),rgb(255, 123, 0));
+            position: absolute;
+            margin:300px 390px;    
+        }
+        .o1{
+            position: absolute;
+            width:130px;
+            height: 130px;
+            border-radius: 50%;
+            border:1px dashed white;
+            top:330px;
+            left:285px;
+            animation: rotate 4s infinite linear ;
+        }
+        .pla{
+            width: 45px;
+            height:45px;
+            border-radius: 50%;
+            border:px solid rgb(255, 255, 255);
+            background-image: url("mercury.png");
+            background-size: cover;
+            animation: rotate 4s infinite linear ;
+        }
+        @keyframes rotate{
+             0%{
+        transform: translate(50%, -50%) rotate(0deg);
+    }
+    100%{
+        transform: translate(50%, -50%) rotate(360deg);
+    }        }
+        .o2{
+            position: absolute;
+            width:270px;
+            height: 270px;
+            border-radius: 50%;
+            border:1px dashed rgb(255, 255, 255);
+            top:330px;
+            left:142px;
+            animation: rotate 6s infinite linear ;
+        }
+        .pla1{
+             width: 55px;
+            height:55px;
+            border-radius: 50%;
+            border:px solid rgb(255, 255, 255);
+            background-image: url("venus.png");
+            background-size: cover;
+            margin: 15px;
+            animation: rotate 4s infinite linear ;
+        }
+        .o3{
+            position: absolute;
+            width:370px;
+            height: 370px;
+            border-radius: 50%;
+            border:1px dashed white;
+            top:330px;
+            left:42px;
+            animation: rotate 10s infinite linear ;
+        }
+        .pla2{
+             width: 55px;
+            height:55px;
+            border-radius: 50%;
+            margin-top: px;
+            margin-left:140px ;
+            background-image: url("earth.png");
+            background-size: cover;
+            border:px solid rgb(255, 255, 255);
+            animation: rotate 10s infinite linear ;
+        }
+        .o4{
+            position: absolute;
+            width:470px;
+            height: 470px;
+            border-radius: 50%;
+            border:1px dashed white;
+            top:330px;
+            left:-58px;
+            animation: rotate 10s infinite linear ;
+        }
+        .pla3{
+             width: 60px;
+            height:60px;
+            border-radius: 50%;
+            margin-top: 25px;
+            margin-left:65px ;
+            background-image: url("mars.png");
+            background-size: cover;
+            border:px solid rgb(255, 255, 255);
+            animation: rotate 10s infinite linear ;
+        }
+    .o5{
+            position: absolute;
+            width:470px;
+            height: 470px;
+            border-radius: 50%;
+            border:1px dashed white;
+            top:330px;
+            left:-58px;
+            animation: rotate 12s infinite linear ;
+        }
+        .pla4{
+             width: 60px;
+            height:60px;
+            border-radius: 50%;
+            margin-top: 25px;
+            margin-left:65px ;
+            background-image: url("jupiter.png");
+            background-size: cover;
+            border:px solid rgb(255, 255, 255);
+            animation: rotate 12s infinite linear ;
+        }
+       .o5{
+            position: absolute;
+            width:570px;
+            height: 570px;
+            border-radius: 50%;
+            border:1px dashed white;
+            top:330px;
+            left:-158px;
+            animation: rotate 15s infinite linear ;
+        }
+        .pla4{
+             width:100px;
+            height:50px;
+            border-radius: 0%;
+            margin-top: 35px;
+            margin-left:45px ;
+            background-image: url("saturn.png");
+            background-size: cover;
+            border:px solid rgb(255, 255, 255);
+            
+        }
+       
+        
+    </style>
+</head>
+<body>
+    <div class="par">
+        <div class="sun"></div>
+        <div class="o1"><div class="pla"></div></div>
+        <div class="o2"><div class="pla1"></div></div>
+        <div class="o3"><div class="pla2"></div></div>
+        <div class="o4"><div class="pla3"></div></div>
+        <div class="o5"><div class="pla4"></div></div>
+        
+       
+    </div>
+</body>
+</html>

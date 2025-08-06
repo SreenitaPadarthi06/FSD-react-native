@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <style>
+       *{
+        margin: 0px;
+        padding: 0px;
+       }
+       body{
+     font-family: Arial, sans-serif;
+    /*background-color: rgb(54, 0, 110);*/
+    overflow-x: hidden;
+       }
+       .header{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        overflow: hidden;
+        padding:20px 60px;
+        background-color: rgb(54, 0, 110);
+       }
+       .icon{
+        margin-top:30px;
+        color:aliceblue;
+        cursor:pointer;
+       }
+       .icon:hover{
+        color:rgb(139, 224, 255);
+       }
+       .main{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background-color:rgb(54, 0, 110);
+        padding:20px 60px;
+       }
+       .text1{
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+       }
+       p{
+        font-size: smaller;
+       }
+       .pic{
+        padding:-30px;
+        margin-top: 10px;
+        opacity:0.8;
+        gap:10px;
+        transform: translatey(-25px);
+       }
+       .readmore,.learnmore{
+        gap:20px;
+        border: 1px solid rgb(107, 153, 161);
+        cursor:pointer;
+        font-family:'Segoe UI';
+        background-color: rgb(96, 231, 255);
+        width:120px;
+        font-size: 80%;
+        border-radius: 8px;
+        text-align: center;
+       }
+       .readmore:hover,.learnmore:hover{
+         text-shadow: 1px 1px 2px rgb(110, 166, 147);
+         background-color: rgb(57, 163, 255);
+         transform: translateX(2px);
+         box-shadow:1px 2px 2px 1px #1cffe8
+       }
+       .key,.pictures{
+        display:flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background-color:rgb(255, 255, 255);
+        padding:20px 60px;
+       }
+       .heading,p{
+        text-align: right;
+       }
+       .cards{
+        display:flex;
+        width: 100%;
+        height:100%;
+        flex-wrap: wrap;
+        border: px solid black;
+        justify-content: space-between;
+       }
+       .bigpic{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+       }
+       .parts{
+        display:grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap:10px 5px;
+       }
+       .c1,.c2,.c3,.c4{
+        cursor: progress;
+        padding:10px;
+        color:white;
+        text-align: center;
+       }
+       
+       .c1{
+        background-color:#34c3d5 ;
+       }
+       .c1:hover{
+        transform: translateY(3px) translateX(-3px);
+        box-shadow: 1px 1px 2px 2px rgb(149, 149, 149);
+        background-color: #1a4f87;
+       }
+       .c2{
+        background-color: #f186ea;
+       }
+       .c2:hover{
+        transform: translateY(3px) translateX(3px);
+        box-shadow: 1px 1px 2px 2px rgb(149, 149, 149);
+        background-color: #fb0aae;
+       }
+       .c3{
+        background-color: #a373f7;
+       }
+       .c3:hover{
+        transform: translateY(3px) translateX(-3px);
+        box-shadow: 1px 1px 2px 2px rgb(149, 149, 149);
+        background-color: #673AB7;
+       }
+       .c4{
+        background-color: #c121cc;
+       }
+       .c4:hover{
+        transform: translateY(3px) translateX(3px);
+        box-shadow: 1px 1px 2px 2px rgb(149, 149, 149);
+        background-color: #6e247b;
+       }
+      .datavisualization{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+      }
+      .head1{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+        color:white;
+        text-align: left;
+        padding: 25px 5px;
+      }
+      .matter,.pic1{
+        display: flex;
+        padding:10px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+      }
+      .text{
+        
+        padding:10px;
+      }
+      .bigpic:hover,.pic1:hover{
+        cursor: pointer;
+        transform: translateY(-5px);
+      }
+      .IT-Sol{
+         display: flex;
+        flex-wrap: wrap;
+        width:900px;
+        flex-direction: row;
+        background-color: white;
+        justify-content: space-between;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+      .head2{
+        padding:20px;
+        color:rgb(0, 0, 0);
+      }
+      .pic2{
+        margin-top: 0px;
+      }
+      .keyboad{
+        padding:50px;
+        color:black;
+        text-decoration: line-through;
+      }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo"><img src="logo.png" width="100px" height="100px"></div>
+        <div class="icon">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+    <div class="main">
+        <div class="text1">
+            <h2>Web Software <br>Developers</h2><br>
+             <p>Ut enim and minim veniam,quis nostrud <br>exercitation ullamco laboris nisi ut aliquip ex <br>ea commodo consequat. Duis aute irure<br> dolor in reprehenderit in voluptate velit esse<br>cillum<br><br>
+            </p>
+            <div class="readmore">READ MORE</div>
+        </div>
+        <div class="pic"><img src="trail-0.png" width="210px" height=210px""</div><br>
+    </div><br><br><br>
+    <div class="key">
+        <div class="heading"><h4>Key Features</h4><br>
+        <p>Click to select the text box. Double click to start editing the text.</p></div></div>
+        <div class="pictures"><br>
+            <div class="bigpic"><img src="trail-1.jpg" width="270px" height="260px"></div><br>
+            <div class="smallpic">
+                <div class="cards">
+                    <div class="parts">
+                        <div class="c1"><a><i class="fa-solid fa-laptop-code"></i></a><br><br>Development</div>
+                        <div class="c2"><i class="fa-solid fa-briefcase"></i><br><br>Top Skills</div>
+                        <div class="c3"><i class="fa-solid fa-cubes-stacked"></i><br><br>Design</div>
+                        <div class="c4"><i class="fa-solid fa-mobile-screen"></i><br><br>Responsive</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="datavisualization">
+            <div class="head1"><h3>Data Visualization</h3><br>
+                <div class="matter">
+                <div class="pic1"><img src="trail-2.jpg" width="400px" height="200px">
+                    <br>
+                    <div class="text">
+                        <h4>01.GOALS</h4>
+                        <p>We are here to give you the best <br>experience. Click on know more. </p><br>
+                        <a href="#">KNOW MORE</a><br><br>
+                        <h4>02.STRATEGY</h4>
+                       <p>Share your valued feedback with us.</p>
+                </div>
+            </div>
+        </div>
+        </div></div>
+        <div class="IT-Sol">
+            <div class="head2"><h3>IT Solution</h3><br>
+                <div class="matter">
+                <div class="keyboard">
+                    We collaborate with you to create<br>
+                    new value through digital<br>
+                transformation. We have hundreds <br>
+            specialists at your service.<br><br>
+        <div class="readmore">LEARN MORE</div></div>
+                <div class="pic2"><img src="trail-3.jpg" width="400px" height="200px">
+            </div>
+        </div>
+        </div></div>
+        
+</body>
+</html>

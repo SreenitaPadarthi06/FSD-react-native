@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+           body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* This is the missing piece */
+    margin: 0; /* Optional: removes default browser spacing */
+}
+        
+        .sun{
+             width:40px;
+            height:40px;
+            border-radius: 30px;
+            border: px solid rgb(0, 0, 0);
+            animation: s 4s  infinite linear  ;
+            background-image: radial-gradient(white,red);
+            box-shadow: 2px  2px 1px rgb(255, 164, 164);
+            animation: 4s infinite linear;
+        }
+        @keyframes s {
+            0%{
+                transform: translateX(150px),rotatez(0deg);
+            }
+            100%{
+                transform: translateX(150px),rotatez(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sun"></div>
+</body>
+</html>
