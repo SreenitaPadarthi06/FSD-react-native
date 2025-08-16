@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+</head>
+<style>
+    body{
+        background:url("https://img.freepik.com/premium-photo/pink-heart-shaped-candy-background_640852-7456.jpg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        margin:0px;
+        padding:0px;
+        height: 100svh;
+    }
+    .heading{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        padding: 3px;
+    }
+    .heading h2{
+        color:rgb(255, 0, 43);
+        text-shadow: 0px 0.3px 5px rgb(255, 64, 96);
+    }
+    .desc{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 5px 10px 5px ;
+        text-shadow: 1px 0px 0.5px black;
+        font-size: 20px;
+        color: rgb(0, 0, 0);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding:25px;
+    }
+    .table{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        background:repeating-linear-gradient(rgb(255, 255, 255)) ;
+        width: 400px;
+        height:400px;
+        color:black;
+        border:1px solid black;
+        border-radius: 2px;
+        box-shadow: 1px 6px 9px gray;
+    }
+    .box{
+        width: 100%;
+        height: 100%;
+        border: 1px solid black;
+    }
+    .control{
+        display: flex;
+        justify-content: space-evenly;
+        gap: 2px;
+        align-items: center;
+        padding:30px 330px;
+    } 
+    .control button{
+        color: rgb(255, 18, 65);
+        height: 30px;
+        font-weight: bolder;
+        cursor: pointer;
+        border-radius: 5px;
+        box-shadow: 2px 4px gray;
+        background-color: rgba(255, 255, 255, 0.751);
+    }
+    .control button:hover{
+        transform: translateY(2px);
+        box-shadow: 0px 0px ;
+    }
+    .minty{
+        position:relative;
+    }
+</style>
+<body>
+    
+    <div class="heading">
+        <h2>Welcome!</h2>
+    </div>
+     <div class="desc">Minty id hungry help her to get a cake.</div>
+     <div class="main">
+        <div class="table">
+            <div class="box" id="pic"><img class="minty" src="./Minty.png" width="100%" height="90%" alt=""></div>
+            <div class="box" ></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"><img src="./Cake.png" width="100%" height="100%" alt=""></div>
+        </div>
+     </div>
+     <div class="control">
+        <button onclick="right()">Right</button>
+        <button onclick="left()">Left</button>
+        <button onclick="top()">Top</button>
+        <button onclick="bottom()">Bottom</button>
+     </div>
+    <script>
+
+        function right(){
+           
+        }
+    </script>
+</body>
+</html>
