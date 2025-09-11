@@ -1,16 +1,57 @@
-import { useState } from 'react'
-import Visit from './Visit'
-
-import './App.css'
+import React from "react";
+// import CARDS from './Cards'
+// // import CV from './CV'
+// // import Dynamiccards from './Dynamiccards';
+// import './Dynamiccards.css';
+// function App() {
+//  const products=[
+//         {price:3000,brand:"PUMA"},
+//         {price:3200,brand:"USA"},
+//         {price:2000,brand:"WROGN"},
+//         {price:2021,brand:"Levi's"}
+//     ];
+//   return (
+//     <>
+//       <CARDS myData = {products}/>
+//     </>
+//   )
+// }
+import { useState } from "react";
+import Conditions from "./Conditions";
+import Conditions2 from "./Conditions2";
 
 function App() {
-  const [count, setCount] = useState(0)
 
-  return (
+//To get either component 1 or 2
+
+  // const [x, setX] = useState(0);
+  // return (
+  //   <div>
+  //     {x === 0 ? <Conditions /> : <Conditions2 />}
+  //     <button onClick={() => setX(x === 0 ? 1 : 0)}>
+  //       Click me
+  //     </button>
+  //   </div>
+  // );
+
+//For count increment
+
+  const [Data,setData]=useState(0);
+    const incre=()=>{
+            setData(Data+1);
+    }
+    const decre=()=>{
+      setData(Data-1);
+    }    
+  return(
     <>
-      <Visit/>
+    <button onClick={incre}>incremenet</button>
+    <button onClick={decre}>decrement</button>
+    <h1>Count:{Data}</h1>
     </>
-  )
+  );
+
+
 }
 
-export default App
+export default App;

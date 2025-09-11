@@ -1,0 +1,39 @@
+
+.parent {
+  display: flex;
+  justify-content: space-around;
+  gap:20px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.card {
+  width: 250px;
+  padding: 15px;
+  border-radius: 10px;
+  background: #f9f9f9;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+}
+
+.logo {
+  height: 80px;
+  width: 80px;
+  background: lightgray;
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
+
+.content {
+  font-family: Arial, sans-serif;
+}
+
+.price {
+  font-weight: bold;
+  color: green;
+}
+
+.brand {
+  font-size: 14px;
+  color: #555;
+}
