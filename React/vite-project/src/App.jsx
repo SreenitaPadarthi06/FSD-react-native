@@ -16,11 +16,11 @@ import React from "react";
 //     </>
 //   )
 // }
-import { useState } from "react";
+
 import Conditions from "./Conditions";
 import Conditions2 from "./Conditions2";
-
-function App() {
+import Dcards from "./Dcards.jsx";
+ function App() {
 
 //To get either component 1 or 2
 
@@ -36,22 +36,26 @@ function App() {
 
 //For count increment
 
-  const [Data,setData]=useState(0);
-    const incre=()=>{
-            setData(Data+1);
-    }
-    const decre=()=>{
-      setData(Data-1);
-    }    
-  return(
+//   const [Data,setData]=useState(0);
+//     const incre=()=>{
+//             setData(Data+1);
+//     }
+//     const decre=()=>{
+//       setData(Data-1);
+//     }    
+//   return(
+//     <>
+//     <button onClick={incre}>incremenet</button>
+//     <button onClick={decre}>decrement</button>
+//     <h1>Count:{Data}</h1>
+//     </>
+//   );
+  return (
     <>
-    <button onClick={incre}>incremenet</button>
-    <button onClick={decre}>decrement</button>
-    <h1>Count:{Data}</h1>
+    <Dcards/>
     </>
   );
 
-
-}
+ }
 
 export default App;

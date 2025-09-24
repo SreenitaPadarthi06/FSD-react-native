@@ -8,7 +8,7 @@ class Dynamiccards extends React.Component{
         {price:2000,brand:"Sree"},
         {price:2021,brand:"Kar"}
     ];
-        return(
+        return( 
             <div className="parent">
                 {products.map(ele => (
                     <div className="card" key={ele.brand}>
